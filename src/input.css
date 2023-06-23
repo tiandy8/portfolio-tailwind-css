@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  #toggle:checked ~ label .toggle-circle {
+    transform: translateX(12px);
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
